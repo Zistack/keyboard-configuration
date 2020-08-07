@@ -1,4 +1,4 @@
-default xkb_keycodes "current" {
+default xkb_keycodes "default" {
     minimum = 8;
     maximum = 255;
      <ESC> = 9;

@@ -1,4 +1,4 @@
-default xkb_geometry "current" {
+default xkb_geometry "default" {
 
     width=       470;
     height=      180;

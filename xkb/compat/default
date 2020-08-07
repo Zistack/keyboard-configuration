@@ -1,4 +1,4 @@
-default xkb_compatibility "current" {
+default xkb_compatibility "default" {
 
     virtual_modifiers NumLock,Alt,LevelThree,LAlt,RAlt,RControl,LControl,ScrollLock,LevelFive,AltGr,Meta,Super,Hyper;
 

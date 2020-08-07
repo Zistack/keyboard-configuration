@@ -43,18 +43,18 @@ $(XORGCONFIGDIR)/% : %
 uninstall :
 	rm -f $(XKBINSTALL) $(KMAPINSTALL)
 
-.PHONY : resetcurrent
-resetcurrent :
-	xkbcomp $$DISPLAY current.xkb
+.PHONY : resetdefault
+resetdefault :
+	xkbcomp $$DISPLAY default.xkb
 	./decompose.sh
 
 .PHONY : resettest
 resettest :
-	$(shell ls -1 xkb/*/current | grep -v rules | sed -e 's~\(.*\)/current~cp \1/current \1/test;~')
+	$(shell ls -1 xkb/*/default | grep -v rules | sed -e 's~\(.*\)/default~cp \1/default \1/test;~')
 
-.PHONY : loadcurrent
-loadcurrent :
-	setxkbmap -Ixkb -rules current -layout current -model current -print | xkbcomp -w 10 -Ixkb - $$DISPLAY
+.PHONY : loaddefault
+loaddefault :
+	setxkbmap -Ixkb -rules default -layout default -model default -print | xkbcomp -w 10 -Ixkb - $$DISPLAY
 
 .PHONY : loadtest
 loadtest :
