@@ -1,0 +1,4 @@
+// Test rules file
+
+! model layout = keycodes types compat symbols geometry
+  test test = test test test test test

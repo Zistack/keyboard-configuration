@@ -1,0 +1,85 @@
+default xkb_types "test" {
+	
+	// The four basic types below MUST exist.  The X server will complain
+	// otherwise.
+	
+	type "ONE_LEVEL" {
+		
+		modifiers = none;
+		
+		map [None] = 1;
+		
+		level_name [1] = "Base";
+		
+	};
+	
+	type "TWO_LEVEL" {
+		
+		modifiers = Shift;
+		
+		map [None] = 1;
+		map [Shift] = 2;
+		
+		level_name [1] = "Base";
+		level_name [2] = "Shift";
+		
+	};
+	
+	type "ALPHABETIC" {
+		
+		modifiers = Shift + Lock;
+		
+		map [None] = 1;
+		map [Shift] = 2;
+		map [Lock] = 2;
+		map [Shift + Lock] = 1;
+		
+		level_name [1] = "Base";
+		level_name [2] = "Shift";
+		
+	};
+	
+	type "KEYPAD" {
+		
+		modifiers = Shift + Mod5;
+		
+		map [None] = 1;
+		map [Shift] = 2;
+		map [Mod5] = 2;
+		map [Shift + Mod5] = 1;
+		
+		level_name [1] = "Base";
+		level_name [2] = "Number";
+		
+	};
+	
+	// These are my own types for switching VTs.
+	
+	type "OS" {
+		
+		modifiers = Mod2;
+		
+		map [None] = 1;
+		map [Mod2] = 2;
+		
+		level_name [1] = "Base";
+		level_name [2] = "OS";
+		
+	};
+	
+	type "TWO_LEVEL+OS" {
+		
+		modifiers = Shift + Mod2;
+		
+		map [None] = 1;
+		map [Shift] = 2;
+		map [Shift + Mod2] = 3;
+		map [Mod2] = 3;
+		
+		level_name [1] = "Base";
+		level_name [2] = "Shift";
+		level_name [3] = "OS";
+		
+	};
+	
+};

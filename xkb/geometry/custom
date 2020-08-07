@@ -1,0 +1,413 @@
+default xkb_geometry "custom" {
+	
+	description = "Custom";
+	width = 247;
+	height = 75;
+	
+	shape.cornerRadius = 0;
+	baseColor = "Blue";
+	
+	shape "Normal" {
+		{
+			[12, 12]
+		},
+		{
+			[1, 1],
+			[11, 11]
+		}
+	};
+	
+	shape "Narrow_Short" {
+		{
+			[11, 8]
+		},
+		{
+			[1, 1],
+			[10, 7]
+		}
+	};
+	
+	shape "Short" {
+		{
+			[12, 8]
+		},
+		{
+			[1, 1],
+			[11, 7]
+		}
+	};
+	
+	shape "Tall" {
+		{
+			[12, 25]
+		},
+		{
+			[1, 1],
+			[11, 24]
+		}
+	};
+	
+	shape "Narrow" {
+		{
+			[11, 12]
+		},
+		{
+			[1, 1],
+			[10, 11]
+		}
+	};
+	
+	shape "`" {
+		{
+			[15, 12]
+		},
+		{
+			[1, 1],
+			[14, 11]
+		}
+	};
+	
+	shape "Bksp" {
+		{
+			[19, 12]
+		},
+		{
+			[1, 1],
+			[18, 11]
+		}
+	};
+	
+	shape "Tab" {
+		{
+			[19, 12]
+		},
+		{
+			[1, 1],
+			[18, 11]
+		}
+	};
+	
+	shape "\\" {
+		{
+			[15, 12]
+		},
+		{
+			[1, 1],
+			[14, 11]
+		}
+	};
+	
+	shape "Caps" {
+		{
+			[24, 12]
+		},
+		{
+			[1, 1],
+			[23, 11]
+		}
+	};
+	
+	shape "Entr" {
+		{
+			[23, 12]
+		},
+		{
+			[1, 1],
+			[22, 11]
+		}
+	};
+	
+	shape "LSft" {
+		{
+			[30, 12]
+		},
+		{
+			[1, 1],
+			[29, 11]
+		}
+	};
+	
+	shape "RSft" {
+		{
+			[18, 12]
+		},
+		{
+			[1, 1],
+			[17, 11]
+		}
+	};
+	
+	shape "LCtl" {
+		{
+			[19, 12]
+		},
+		{
+			[1, 1],
+			[18, 11]
+		}
+	};
+	
+	shape "LAlt" {
+		{
+			[15, 12]
+		},
+		{
+			[1, 1],
+			[14, 11]
+		}
+	};
+	
+	shape "Spce" {
+		{
+			[68, 12]
+		},
+		{
+			[1, 1],
+			[67, 11]
+		}
+	};
+	
+	shape "KP0" {
+		{
+			[15, 12]
+		},
+		{
+			[1, 1],
+			[14, 11]
+		}
+	};
+	
+	section "Main" {
+		
+		top = 1;
+		left = 1;
+		width = 191;
+		height = 73;
+		
+		key.color = "Black";
+		
+		row {
+			top = 0;
+			left = 0;
+			keys {
+				{<Esc>, "Narrow_Short", 0},
+				{<F1>, "Narrow_Short", 1},
+				{<F2>, "Narrow_Short", 1},
+				{<F3>, "Narrow_Short", 1},
+				{<F4>, "Narrow_Short", 1},
+				{<F5>, "Narrow_Short", 1},
+				{<F6>, "Narrow_Short", 1},
+				{<F7>, "Narrow_Short", 1},
+				{<F8>, "Narrow_Short", 1},
+				{<F9>, "Narrow_Short", 1},
+				{<F10>, "Narrow_Short", 1},
+				{<F11>, "Narrow_Short", 1},
+				{<F12>, "Narrow_Short", 1},
+				{<PrSc>, "Narrow_Short", 1},
+				{<ScLk>, "Narrow_Short", 1},
+				{<Paus>, "Narrow_Short", 1}
+			};
+		};
+		
+		row {
+			top = 9;
+			left = 0;
+			keys {
+				{<`>, "`", 0},
+				{<1>, "Normal", 1},
+				{<2>, "Normal", 1},
+				{<3>, "Normal", 1},
+				{<4>, "Normal", 1},
+				{<5>, "Normal", 1},
+				{<6>, "Normal", 1},
+				{<7>, "Normal", 1},
+				{<8>, "Normal", 1},
+				{<9>, "Normal", 1},
+				{<0>, "Normal", 1},
+				{<->, "Normal", 1},
+				{<=>, "Normal", 1},
+				{<Bksp>, "Bksp", 1}
+			};
+		};
+		
+		row {
+			top = 22;
+			left = 0;
+			keys {
+				{<Tab>, "Tab", 0},
+				{<q>, "Normal", 1},
+				{<w>, "Normal", 1},
+				{<e>, "Normal", 1},
+				{<r>, "Normal", 1},
+				{<t>, "Normal", 1},
+				{<y>, "Normal", 1},
+				{<u>, "Normal", 1},
+				{<i>, "Normal", 1},
+				{<o>, "Normal", 1},
+				{<p>, "Normal", 1},
+				{<[>, "Normal", 1},
+				{<]>, "Normal", 1},
+				{<\\>, "\\", 1}
+			};
+		};
+		
+		row {
+			top = 35;
+			left = 0;
+			keys {
+				{<Caps>, "Caps", 0},
+				{<a>, "Normal", 1},
+				{<s>, "Normal", 1},
+				{<d>, "Normal", 1},
+				{<f>, "Normal", 1},
+				{<g>, "Normal", 1},
+				{<h>, "Normal", 1},
+				{<j>, "Normal", 1},
+				{<k>, "Normal", 1},
+				{<l>, "Normal", 1},
+				{<;>, "Normal", 1},
+				{<'>, "Normal", 1},
+				{<Entr>, "Entr", 1}
+			};
+		};
+		
+		row {
+			top = 48;
+			left = 0;
+			keys {
+				{<LSft>, "LSft", 0},
+				{<z>, "Normal", 1},
+				{<x>, "Normal", 1},
+				{<c>, "Normal", 1},
+				{<v>, "Normal", 1},
+				{<b>, "Normal", 1},
+				{<n>, "Normal", 1},
+				{<m>, "Normal", 1},
+				{<,>, "Normal", 1},
+				{<.>, "Normal", 1},
+				{</>, "Normal", 1},
+				{<RSft>, "RSft", 1}
+			};
+		};
+		
+		row {
+			top = 61;
+			left = 0;
+			keys {
+				{<LCtl>, "LCtl", 0},
+				{<Win>, "Narrow", 1},
+				{<LAlt>, "LAlt", 1},
+				{<Spce>, "Spce", 1},
+				{<|>, "Normal", 1},
+				{<RAlt>, "Normal", 1},
+				// The next key is not visible to XKB
+				{<RCtl>, "Normal", 13}
+			};
+		};
+		
+	}; // Main
+	
+	section "Arrows" {
+		
+		top = 49;
+		left = 169;
+		width = 35;
+		height = 25;
+		
+		key.color = "Black";
+		
+		row {
+			top = 0;
+			left = 12;
+			keys {
+				{<Up>, "Narrow", 0}
+			};
+		};
+		
+		row {
+			top = 13;
+			left = 0;
+			keys {
+				{<Left>, "Narrow", 0},
+				{<Down>, "Narrow", 1},
+				{<Rght>, "Narrow", 1}
+			};
+		};
+		
+	}; // Arrows
+	
+	section "Keypad" {
+		
+		top = 1;
+		left = 195;
+		width = 51;
+		height = 73;
+		
+		key.color = "Black";
+		
+		row {
+			top = 0;
+			left = 0;
+			keys {
+				{<Ins>, "Short", 0},
+				{<Del>, "Short", 1},
+				{<PgUp>, "Short", 1},
+				{<PgDn>, "Short", 1}
+			};
+		};
+		
+		row {
+			top = 9;
+			left = 0;
+			keys {
+				{<NmLk>, "Normal", 0},
+				{<KP/>, "Normal", 1},
+				{<KP*>, "Normal", 1},
+				{<KP->, "Normal", 1}
+			};
+		};
+		
+		row {
+			top = 22;
+			left = 0;
+			keys {
+				{<KP7>, "Normal", 0},
+				{<KP8>, "Normal", 1},
+				{<KP9>, "Normal", 1},
+				{<KP+>, "Tall", 1}
+			};
+		};
+		
+		row {
+			top = 35;
+			left = 0;
+			keys {
+				{<KP4>, "Normal", 0},
+				{<KP5>, "Normal", 1},
+				{<KP6>, "Normal", 1}
+			};
+		};
+		
+		row {
+			top = 48;
+			left = 0;
+			keys {
+				{<KP1>, "Normal", 0},
+				{<KP2>, "Normal", 1},
+				{<KP3>, "Normal", 1},
+				{<KPEn>, "Tall", 1}
+			};
+		};
+		
+		row {
+			top = 61;
+			left = 10;
+			keys {
+				{<KP0>, "KP0", 0},
+				{<KP.>, "Normal", 1}
+			};
+		};
+		
+	}; // Keypad
+	
+};

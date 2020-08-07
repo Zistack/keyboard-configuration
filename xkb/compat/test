@@ -1,0 +1,86 @@
+default xkb_compatibility "test" {
+	
+    interpret.useModMapMods= AnyLevel;
+    interpret.repeat= False;
+    interpret.locking= False;
+	
+    interpret Num_Lock {
+		
+		action= LockMods (modifiers = Mod5);
+		
+    };
+    
+    interpret XF86Switch_VT_1 {
+    
+        action= SwitchScreen(screen=1,!same);
+        
+    };
+    interpret XF86Switch_VT_2 {
+    
+        action= SwitchScreen(screen=2,!same);
+        
+    };
+    interpret XF86Switch_VT_3 {
+    
+        action= SwitchScreen(screen=3,!same);
+        
+    };
+    interpret XF86Switch_VT_4 {
+    
+        action= SwitchScreen(screen=4,!same);
+        
+    };
+    interpret XF86Switch_VT_5 {
+    
+        action= SwitchScreen(screen=5,!same);
+        
+    };
+    interpret XF86Switch_VT_6 {
+    
+        action= SwitchScreen(screen=6,!same);
+        
+    };
+    interpret XF86Switch_VT_7 {
+    
+        action= SwitchScreen(screen=7,!same);
+        
+    };
+    interpret XF86Switch_VT_8 {
+    
+        action= SwitchScreen(screen=8,!same);
+        
+    };
+    interpret XF86Switch_VT_9 {
+    
+        action= SwitchScreen(screen=9,!same);
+        
+    };
+    interpret XF86Switch_VT_10 {
+    
+        action= SwitchScreen(screen=10,!same);
+        
+    };
+    interpret XF86Switch_VT_11 {
+    
+        action= SwitchScreen(screen=11,!same);
+        
+    };
+    interpret XF86Switch_VT_12 {
+    
+        action= SwitchScreen(screen=12,!same);
+        
+    };
+
+    interpret Any + AnyOf (all) {
+    	
+        action = SetMods (modifiers = ModMapMods, clearlocks = True);
+        
+    };
+    
+    indicator "Num Lock" {
+	    allowExplicit = False;
+        whichModState= locked;
+        modifiers= mod5;
+    };
+};
+

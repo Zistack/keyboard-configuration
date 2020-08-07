@@ -1,0 +1,49 @@
+Shift    :    Shift
+AltGR    :     Lock
+Control  :  Control
+Alt      :     Mod1
+ShiftL   :     Mod2
+ShiftR   :     Mod3
+CtrlL    :     Mod4
+CtrlR    :     Mod5
+
+:b x
+----
+k# = x
+
+:s x
+----
+Shift k# = x
+
+:m x
+ShiftL k# = x
+
+:ba
+k# = x
+Alt k# = Meta_x
+
+:sa x
+Shift k# = x
+Shift Alt k# = Meta_x
+
+:bac x
+k# = x
+Alt k# = Meta_x
+Control k# = Control_x
+Alt Control k# = Meta_Control_x
+
+:sac x
+Shift k# = x
+Shift Alt k# = Meta_x
+Shift Control k# = Control_x
+Shift Alt Control k# = Meta_Control_x
+
+
+
+In particular, we really want to define all 256 combinations.  That's a pretty 
+big number, but not so large that a computer can't do it.
+
+How should we approach this?
+
+We also need to check to make sure that the kmap.src agrees with the xkb 
+configuration.

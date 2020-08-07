@@ -1,0 +1,109 @@
+default xkb_compatibility "custom" {
+	
+	interpret.useModMapMods = AnyLevel;
+	interpret.repeat = False;
+	interpret.locking = False;
+	
+	// As it turns out, there must be at least one real modifier bound to a
+	// virtual modifier for the virtual modifier to behave correctly.  I find
+	// that it is easier to just pick a real modifier.  This is why Num Lock is
+	// bound to Mod5.
+	
+	interpret Num_Lock {
+		
+		action = LockMods (modifiers = Mod5);
+		
+	};
+	
+	interpret XF86Switch_VT_1 {
+		
+		action = SwitchScreen (screen = 1, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_2 {
+		
+		action = SwitchScreen (screen = 2, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_3 {
+		
+		action = SwitchScreen (screen = 3, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_4 {
+		
+		action = SwitchScreen (screen = 4, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_5 {
+		
+		action = SwitchScreen (screen = 5, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_6 {
+		
+		action = SwitchScreen (screen = 6, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_7 {
+		
+		action = SwitchScreen (screen = 7, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_8 {
+		
+		action = SwitchScreen (screen = 8, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_9 {
+		
+		action = SwitchScreen (screen = 9, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_10 {
+		
+		action = SwitchScreen (screen = 10, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_11 {
+		
+		action = SwitchScreen (screen = 11, same = False);
+		
+	};
+	
+	interpret XF86Switch_VT_12 {
+		
+		action = SwitchScreen (screen = 12, same = False);
+		
+	};
+	
+	// This takes any key associated with a modifier in the symbols file, and
+	// binds an action to it that sets the modifier for as long as the key is
+	// held down.
+	
+	interpret Any + AnyOf(all) {
+		
+		action = SetMods (modifiers = ModMapMods);
+//		action = SetMods (modifiers = ModMapMods, clearlocks = True);
+		
+	};
+	
+	indicator "Num Lock" {
+		
+		allowExplicit = False;
+		whichModState = locked;
+		modifiers = Mod5;
+		
+	};
+	
+};

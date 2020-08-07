@@ -1,0 +1,4 @@
+// Custom rules file
+
+! model layout = keycodes types compat symbols geometry
+  custom custom = custom custom custom custom custom
